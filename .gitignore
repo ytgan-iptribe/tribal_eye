@@ -1,0 +1,11 @@
+node_modules/
+**/__pycache__/
+**/jira_evidence/
+**/OpenSearch data/
+**/.env/
+**/output/
+*.csv
+
+demo/core/verification/awsvpnclient_amd64.deb
+demo/core/verification/awsvpnclient_amd64.deb
+demo/.msal_token_cache.json

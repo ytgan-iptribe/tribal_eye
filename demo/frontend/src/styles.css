@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* ==========================================
+   BASE & TYPOGRAPHY
+   ========================================== */
+
+body {
+  background: #f4f6f8;
+  color: #172b3a;
+  font-family: Inter, ui-sans-serif, system-ui;
+}
+
+button {
+  transition: all 0.15s;
+}
+
+button:hover {
+  filter: brightness(0.96);
+}
+
+/* ==========================================
+   COMPONENTS & UI UTILITIES
+   ========================================== */
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e3e8ec;
+  border-radius: 12px;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.gridlines {
+  background: repeating-linear-gradient(
+    to top,
+    transparent 0,
+    transparent 37px,
+    #edf1f4 38px
+  );
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+
+@keyframes pulse {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}

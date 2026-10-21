@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Gx - Error Code",
+    "baseUrl": "https://opensearch-singtel-prod-3e7eaec0fb34e638.elb.ap-southeast-1.amazonaws.com",
+    "index": "dra_errorcode*",
+    "dimensionLabel": "dra",
+    "valueLabel": "transaction_count",
+    "query": {
+      "size": 0,
+        "query": {
+          "bool": {
+      "must": [],
+      "filter": [
+        {
+          "match_all": {}
+        },
+        {
+          "match_phrase": {
+            "dra": "Gxo"
+          }
+        },
+        {
+          "range": {
+            "log_timestamp": {
+              "gte": "__GTE__",
+              "lte": "__LTE__",
+              "format": "strict_date_optional_time"
+            }
+          }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+        },
+      "aggs": {
+        "2": {
+          "date_histogram": {
+            "field": "log_timestamp",
+            "fixed_interval": "1m",
+            "time_zone": "Asia/Singapore",
+            "format": "yyyy-MM-dd HH:mm:ss",
+            "min_doc_count": 1
+          },
+          "aggs": {
+            "3": {
+              "terms": {
+                "field": "error_code",
+                "order": {
+                  "1": "desc"
+                },
+                "size": 5
+              },
+              "aggs": {
+                "1": {
+                  "sum": {
+                    "field": "count"
+                  }
+                },
+                "4": {
+                  "terms": {
+                    "field": "error_desc",
+                    "order": {
+                      "1": "desc"
+                    },
+                    "size": 5
+                  },
+                  "aggs": {
+                    "1": {
+                      "sum": {
+                        "field": "count"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "Gy - Error Code Wise",
+    "baseUrl": "https://opensearch-singtel-prod-3e7eaec0fb34e638.elb.ap-southeast-1.amazonaws.com",
+    "index": "dra_errorcode*",
+    "dimensionLabel": "dra",
+    "valueLabel": "transaction_count",
+    "query": {
+      "size": 0,
+        "query": {
+          "bool": {
+      "must": [],
+      "filter": [
+        {
+          "match_all": {}
+        },
+        {
+          "match_phrase": {
+            "dra": "Gyo"
+          }
+        },
+        {
+          "range": {
+            "log_timestamp": {
+              "gte": "__GTE__",
+              "lte": "__LTE__",
+              "format": "strict_date_optional_time"
+            }
+          }
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+        },
+      "aggs": {
+        "2": {
+          "date_histogram": {
+            "field": "log_timestamp",
+            "fixed_interval": "1m",
+            "time_zone": "Asia/Singapore",
+            "format": "yyyy-MM-dd HH:mm:ss",
+            "min_doc_count": 1
+          },
+          "aggs": {
+            "3": {
+              "terms": {
+                "field": "error_code",
+                "order": {
+                  "1": "desc"
+                },
+                "size": 5
+              },
+              "aggs": {
+                "1": {
+                  "sum": {
+                    "field": "count"
+                  }
+                },
+                "4": {
+                  "terms": {
+                    "field": "error_desc",
+                    "order": {
+                      "1": "desc"
+                    },
+                    "size": 5
+                  },
+                  "aggs": {
+                    "1": {
+                      "sum": {
+                        "field": "count"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

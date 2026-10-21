@@ -1,0 +1,104 @@
+1
+====================
+Sender: mvne.support@ip-tribe.com
+Date: 2026-09-06 10:43:12+00:00
+Subject: [Critical] Singtel BSS || DRA Gy TimerExpiry 5012 Count
+Body:
+** External Email **
+
+Hi Team,
+
+Monitor DRA Gy TimerExpiry 5012 Count just entered alert status. Please investigate the issue.
+
+Trigger: DRA Gy TimerExpiry 5012 Hourly Count Critical
+Severity: 1
+
+──────────────────────────────────────────────────
+ THRESHOLD & METRIC DETAILS
+──────────────────────────────────────────────────
+  Observation Window   : Last 5 Minutes
+  Configured Threshold : 80
+  Actual Error Count   : 24673.0
+
+
+<<This is a system generated Email alert initiated from OpenSearch>>
+====================
+
+2
+====================
+Sender: mvne.support@ip-tribe.com
+Date: 2026-09-06 10:48:12+00:00
+Subject: [Critical] Singtel BSS || DRA Gy TimerExpiry 5012 Count
+Body:
+** External Email **
+
+Hi Team,
+
+Monitor DRA Gy TimerExpiry 5012 Count just entered alert status. Please investigate the issue.
+
+Trigger: DRA Gy TimerExpiry 5012 Hourly Count Critical
+Severity: 1
+
+──────────────────────────────────────────────────
+ THRESHOLD & METRIC DETAILS
+──────────────────────────────────────────────────
+  Observation Window   : Last 5 Minutes
+  Configured Threshold : 80
+  Actual Error Count   : 131574.0
+
+
+<<This is a system generated Email alert initiated from OpenSearch>>
+====================
+
+3
+====================
+Sender: mvne.support@ip-tribe.com
+Date: 2026-09-06 10:53:12+00:00
+Subject: [Critical] Singtel BSS || DRA Gy TimerExpiry 5012 Count
+Body:
+** External Email **
+
+Hi Team,
+
+Monitor DRA Gy TimerExpiry 5012 Count just entered alert status. Please investigate the issue.
+
+Trigger: DRA Gy TimerExpiry 5012 Hourly Count Critical
+Severity: 1
+
+──────────────────────────────────────────────────
+ THRESHOLD & METRIC DETAILS
+──────────────────────────────────────────────────
+  Observation Window   : Last 5 Minutes
+  Configured Threshold : 80
+  Actual Error Count   : 122433.0
+
+
+<<This is a system generated Email alert initiated from OpenSearch>>
+====================
+
+4
+====================
+Sender: mvne.support@ip-tribe.com
+Date: 2026-09-06 10:58:12+00:00
+Subject: [Critical] Singtel BSS || DRA Gy TimerExpiry 5012 Count
+Body:
+** External Email **
+
+Hi Team,
+
+Monitor DRA Gy TimerExpiry 5012 Count just entered alert status. Please investigate the issue.
+
+Trigger: DRA Gy TimerExpiry 5012 Hourly Count Critical
+Severity: 1
+
+──────────────────────────────────────────────────
+ THRESHOLD & METRIC DETAILS
+──────────────────────────────────────────────────
+  Observation Window   : Last 5 Minutes
+  Configured Threshold : 80
+  Actual Error Count   : 9060.0
+
+
+<<This is a system generated Email alert initiated from OpenSearch>>
+====================
+
